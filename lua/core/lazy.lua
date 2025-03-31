@@ -23,7 +23,11 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	spec = {
-		{ import = "plugins" },
+		"ellisonleao/gruvbox.nvim",
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+		"nvim-treesitter/nvim-treesitter",
 	},
 	defaults = {
 		lazy = false,
@@ -44,5 +48,5 @@ require("lazy").setup({
 			},
 		},
 	},
-	install = { colorscheme = { "gruvbox" } }
+	install = { colorscheme = { "gruvbox" } },
 })
