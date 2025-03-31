@@ -7,7 +7,7 @@ require("nvim-treesitter").setup({
           		ensure_installed = {
 					"astro",
 					"bash",
-					"c", 
+					"c",
 					"c_sharp",
 					"css",
 					"dockerfile",
@@ -30,10 +30,12 @@ require("nvim-treesitter").setup({
 					"sql",
 					"svelte",
 					"typescript",
+					"vim",
+					"vimdoc",
 				},
           		sync_install = false,
           		highlight = { enable = true },
-          		indent = { enable = true },  
+          		indent = { enable = true },
         	})
     	end
 })

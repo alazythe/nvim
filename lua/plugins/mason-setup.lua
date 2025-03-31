@@ -22,6 +22,15 @@ require("mason-lspconfig").setup {
 		"svelte",
 		"tailwindcss",
 		"ts_ls",
+		"vimls"
 	},
 }
-require("lspconfig").lua_ls.setup {}
+require("lspconfig").lua_ls.setup {
+	settings = {
+		Lua = {
+			diagnostics = {
+				globals = { "vim" },
+			}
+		}
+	}
+}
