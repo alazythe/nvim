@@ -5,3 +5,4 @@ require("plugins.nvim-tree-setup")
 
 require("autoclose").setup()
 require("nvim-surround").setup()
+require("telescope").setup()

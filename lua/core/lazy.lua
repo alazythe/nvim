@@ -30,6 +30,10 @@ require("lazy").setup({
 		"nvim-treesitter/nvim-treesitter",
 		"nvim-tree/nvim-tree.lua",
 		"nvim-tree/nvim-web-devicons",
+		{
+			'nvim-telescope/telescope.nvim',
+			dependencies = { 'nvim-lua/plenary.nvim' },
+		},
 		"m4xshen/autoclose.nvim",
  		"kylechui/nvim-surround",
 		{
@@ -45,8 +49,8 @@ require("lazy").setup({
 		"L3MON4D3/LuaSnip",
 		"saadparwaiz1/cmp_luasnip",
 		"rafamadriz/friendly-snippets",
-		"SergioRibera/cmp-dotenv",
-		"lukas-reineke/cmp-under-comparator",
+		--"SergioRibera/cmp-dotenv",
+		--"lukas-reineke/cmp-under-comparator",
 	},
 	defaults = {
 		lazy = false,
