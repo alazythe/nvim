@@ -31,6 +31,7 @@ require("lazy").setup({
 		"nvim-tree/nvim-tree.lua",
 		"nvim-tree/nvim-web-devicons",
 		"m4xshen/autoclose.nvim",
+ 		"kylechui/nvim-surround",
 		{
   			"hrsh7th/nvim-cmp",
   			version = false,
