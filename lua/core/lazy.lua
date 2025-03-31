@@ -28,6 +28,24 @@ require("lazy").setup({
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 		"nvim-treesitter/nvim-treesitter",
+		"nvim-tree/nvim-tree.lua",
+		"nvim-tree/nvim-web-devicons",
+		"m4xshen/autoclose.nvim",
+		{
+  			"hrsh7th/nvim-cmp",
+  			version = false,
+  			event = "InsertEnter",
+  			dependencies = {
+    			"hrsh7th/cmp-nvim-lsp",
+    			"hrsh7th/cmp-buffer",
+			    "hrsh7th/cmp-path",
+			}
+		},
+		"L3MON4D3/LuaSnip",
+		"saadparwaiz1/cmp_luasnip",
+		"rafamadriz/friendly-snippets",
+		"SergioRibera/cmp-dotenv",
+		"lukas-reineke/cmp-under-comparator",
 	},
 	defaults = {
 		lazy = false,

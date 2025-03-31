@@ -24,3 +24,4 @@ require("mason-lspconfig").setup {
 		"ts_ls",
 	},
 }
+require("lspconfig").lua_ls.setup {}
