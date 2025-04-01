@@ -30,12 +30,21 @@ require("lazy").setup({
 		"nvim-treesitter/nvim-treesitter",
 		"nvim-tree/nvim-tree.lua",
 		"nvim-tree/nvim-web-devicons",
-		{
-			'nvim-telescope/telescope.nvim',
-			dependencies = { 'nvim-lua/plenary.nvim' },
-		},
 		"m4xshen/autoclose.nvim",
  		"kylechui/nvim-surround",
+		"L3MON4D3/LuaSnip",
+		"saadparwaiz1/cmp_luasnip",
+		"rafamadriz/friendly-snippets",
+		--"SergioRibera/cmp-dotenv",
+		--"lukas-reineke/cmp-under-comparator",
+		{
+			"akinsho/bufferline.nvim",
+			dependencies = { "nvim-tree/nvim-web-devicons" }
+		},
+		{
+			"nvim-telescope/telescope.nvim",
+			dependencies = { "nvim-lua/plenary.nvim" },
+		},
 		{
   			"hrsh7th/nvim-cmp",
   			version = false,
@@ -46,11 +55,6 @@ require("lazy").setup({
 			    "hrsh7th/cmp-path",
 			}
 		},
-		"L3MON4D3/LuaSnip",
-		"saadparwaiz1/cmp_luasnip",
-		"rafamadriz/friendly-snippets",
-		--"SergioRibera/cmp-dotenv",
-		--"lukas-reineke/cmp-under-comparator",
 	},
 	defaults = {
 		lazy = false,
