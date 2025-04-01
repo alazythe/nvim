@@ -23,13 +23,15 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	spec = {
-		"ellisonleao/gruvbox.nvim",
+		"LazyVim/LazyVim",
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 		"nvim-treesitter/nvim-treesitter",
-		"nvim-tree/nvim-tree.lua",
-		"nvim-tree/nvim-web-devicons",
+		{
+			"nvim-tree/nvim-tree.lua",
+			dependencies = { "nvim-tree/nvim-web-devicons" },
+		},
 		"m4xshen/autoclose.nvim",
  		"kylechui/nvim-surround",
 		"L3MON4D3/LuaSnip",
@@ -55,6 +57,20 @@ require("lazy").setup({
 			    "hrsh7th/cmp-path",
 			}
 		},
+		{
+		  	"ray-x/go.nvim",
+		  	dependencies = {
+				"ray-x/guihua.lua",
+				"neovim/nvim-lspconfig",
+				"nvim-treesitter/nvim-treesitter",
+		  	},
+		  	config = function()
+				require("go").setup()
+		  	end,
+		  	event = {"CmdlineEnter"},
+		  	ft = {"go", 'gomod'},
+		  	build = ':lua require("go.install").update_all_sync()'
+		},
 	},
 	defaults = {
 		lazy = false,
@@ -75,5 +91,4 @@ require("lazy").setup({
 			},
 		},
 	},
-	install = { colorscheme = { "gruvbox" } },
 })
